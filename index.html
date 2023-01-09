@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+  
+  
+    
+    <section class="header">
+            <div class="uk-flex" uk-slideshow>
+                <div id="info" class="uk-container uk-text-sm uk-background-secondary"></div>
+                <div id="info2" class="uk-container uk-text-sm uk-background-secondary"></div>
+            </div>
+           
+            
+  
+               <!-- Main Navbar -->
+        <nav class="uk-container uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached',
+    top:-100, animation: 'uk-animation-slide-top'}">
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a href="#" class="logo"><img src="images/Logo 1.png" alt=""></a>
+                        </li> 
+                    </ul>
+                </div>
+
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav uk-visible@s">
+                        <li class="uk-nav-item uk-active"><a class="uk-text-large" href="#">about</a></li>
+                        <li class="uk-nav-item"><a class="uk-text-large" href="#">our work</a></li>
+                        <li class="uk-nav-item"><a class="uk-text-large" href="#">our portfolio</a></li>
+                        <li class="uk-nav-item"><a class="uk-text-large" href="#">our services</a></li>
+                        
+                    </ul>
+                    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <button class="buttonone uk-button uk-button-secondary" onclick="myFunction()">Book a Call</button>
+                </div>
+        </nav>
+
+        <!-- header - hero  -->
+        <div class="hero">
+            <p class="uk-text-large uk-text-center">let's fly</p>
+            
+            <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-align-center" uk-grid>
+               
+                <div>
+                    <div class="uk-inline uk-align-center">
+                        <img class="hero-img" src="images/Untitled-1 1.png" width="600" height="400" alt="">
+                        <div class="hero-text uk-overlay uk-position-top">
+                            <p class="hero-text uk-text-large uk-text-uppercase"
+                           >Together</p>
+                        </div>
+                    </div>
+                </div>             
+            </div>            
+
+            </div>
+        </div>  
+                 
+    </section>
+    <section class="client-collection uk-background-secondary" id="client-collection">
+        <div class="uk-flex uk-flex-center uk-container ">
+            <div class="text-group uk-text-start uk-align-center uk-text-uppercase">
+                <div class="text-one">
+                    we are a
+                </div>
+                <div class="text-two">
+                    <b>Full stack </b>
+                </div>
+                <div class="text-three">
+                    <b>Marketing Agency</b>
+                </div>
+            </div>
+        </div>
+
+      <h2 class="text-header uk-text-uppercase uk-text-center">official <span style="color: #FDCF09;">partners</span></h2>
+
+
+      <div class="uk-container uk-text-center" id="partners">
+        <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+           
+                <div class="triple">Triple Whale</div>
+            
+                <div class="shopify"><i>Shopify</i></div>
+           
+                <div class="snapchat">
+                      <img src="images/image-removebg-preview (12).png" alt="">
+                      <span class="">Snapchat</span>
+                </div>
+           
+        </div>
+      </div>
+
+       
+    </section> 
+
+    <section class="aboutus uk-background-secondary">
+
+        <div class="uk-container uk-text-center">
+                <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-text-uppercase" uk-grid>
+                    <div class="uk-flex uk-flex-center">
+                        <div class="aboutwho uk-margin-top">who</div>
+                        <div class="aboutweare uk-text-uppercase">
+                            <div class="uk-text-left">we</div>
+                            <div>are?</div>
+                           
+                        </div>
+                       
+                    </div>
+                </div>
+                 
+
+                <div class="about-info uk-text-start uk-align-center uk-margin-top uk-text-uppercase">We are a 
+                    full-stack marketing agency with proven experience of 7+ years. we take pride in our founders 
+                    having experience in scaling and helping Pakistani and international brands to become what they have been thriving for years. our team is qualified in marketing, branding, and development we create brands that scale
+                </div>
+
+
+                <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-text-uppercase" uk-grid>
+                    <div class="uk-flex uk-flex-center">
+                        <h2 class="text-orientation"> our</h2>
+                        <div class="h4 aboutwho uk-margin-top">Mission</div>
+                    </div>
+                </div>
+
+                <div class="about-info uk-text-start uk-align-center uk-margin-top uk-text-uppercase" style="width: 45%;">
+                    Our Mission is to help business to scale their business and to grow beyond their expectation.
+                </div>
+
+               
+                <div id="opportunity" class="aboutweare uk-align-center uk-text-center uk-margin-top uk-text-uppercase 
+                uk-margin-large-top" style="width: 20%;">
+                     <div>The <span style="color: #FDCF09;">opportunity</span> you are <span style="color: #FDCF09;">missing!</span></div>
+                </div>
+                <div class="uk-flex">
+                    <span class="text-orientation" style="font-size: 16px; font-weight: 300;">In million usd(us$)</span>
+                    <div class="uk-text-1-1 uk-align-center" style="width: 80%">
+                        <div class="chartCard">
+                            <div class="chartBox">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-orientation" style="font-size: 16px; font-weight: 300; gap:2px;">Ad spending social media</span>
+                </div>
+                  
+
+            </div>           
+        </div>
+
+    </section>
+
+
+    <section id="delightsome" class="delightsome uk-background-secondary">
+            <div class="uk-container uk-text-center">
+
+                <div id="opportunity" class="aboutweare uk-align-center uk-text-center uk-margin-top uk-text-uppercase 
+                uk-margin-large-top" style="width: 20%;">
+                     <div>Our <span style="color: #FDCF09;">Delightsome</span> Clients</div>
+                </div>
+
+                <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-4@s uk-text-center" uk-grid>
+
+                    <div>
+                        <div >
+                            <img src="images/Mask group (4).png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/sony.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="uk-flex uk-flex-center">
+                            <img src="images/image 2.png" alt="">
+                            <img src="images/Mask group (6).png" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="uk-flex uk-flex-center uk-width-1-1">
+                            <img src="images/image 4.png" alt="">
+                            <img src="images/Mask group (5).png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                  
+                 
+
+                <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-4@s uk-text-center" uk-grid>
+                    <div>
+                        <div >
+                            <img src="images/15.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/Mask group@2x.png" alt="">
+                        </div>
+                    </div>
+                    <div class="image-group">
+                        <div>
+                            <img src="images/Mask group.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-padding-large">
+                                <img src="images/14-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+
+               
+
+                <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-4@s uk-text-center" uk-grid>
+                    
+                    <div>
+                        <div>
+                            <img src="images/Mask group@2x.png" alt="">
+                        </div>
+                    </div>
+                    <div class="image-group">
+                        <div>
+                            <img src="images/Mask group.png" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="uk-padding-large">
+                                <img src="images/14-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="image-group uk-padding-small uk-margin-large-top">
+                            <img src="images/Mask group (2).png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                  
+            </div>
+    </section>
+
+    <section id="magic" class="magic uk-background-secondary">
+        <div class="uk-container uk-text-center uk-padding-large">
+
+            <div  class="aboutweare uk-align-center uk-text-center uk-margin-top uk-text-uppercase 
+            uk-margin-large-top" style="width: 25%;">
+                 <div>the team that makes 
+                    the <span style="color: #FDCF09;">magic </span> happen!</div>
+            </div>
+
+            <div class="uk-padding-large">
+
+                <div class="uk-grid-large uk-child-width-expand@s uk-text-center" uk-grid>
+
+                    <div id="member" class="uk-width-1-3 uk-width-small-1-6">
+                        <div>
+                            <img class="margin-small-left" src="images/1 6@2x.png" width="250">
+                            <div class="team1 uk-text-uppercase uk-text-center">
+                                <div>Jawad Irfan</div>
+                                <div style="color: #FEC200; line-height: 1em;">cmo-marketing wizard
+                                    co-founder</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="member" class="uk-width-1-3 uk-width-small-1-6">
+                        <div>
+                            <img class="margin-small-left" src="images/Team 1.png" width="250">
+                            <div class="team1 uk-text-uppercase uk-text-center">
+                                <div>bilal ahmed </div>
+                                <div style="color: #FEC200; line-height: 1em;">ceo-the mastermind
+                                    co-founder</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="member" class="uk-width-1-3 uk-width-small-1-6">
+                        <div>
+                            <img class="margin-small-left" src="images/3 8.png" width="250">
+                            <div class="team1 uk-text-uppercase uk-text-center">
+                                <div>Muhammad anas</div>
+                                <div style="color: #FEC200; line-height: 1em;">cbo-brand builder
+                                    co-founder</div>
+                            </div>
+                        </div>
+                    </div>  
+
+                </div>
+            </div>
+
+            <div class="uk-padding-large">
+
+                <div class="uk-grid-large uk-child-width-expand@s uk-text-center" uk-grid>
+
+                    <div  id="member" class="uk-width-1-3 uk-width-small-1-6">
+                        <div>
+                            <img class="margin-small-left" src="images/4 5.png" width="250">
+                            <div class="team1 uk-text-uppercase uk-text-center">
+                                <div>ahmed naveed</div>
+                                <div style="color: #FEC200; line-height: 1em;">media buyer
+                                    founding member</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  id="member" class="uk-width-1-3 uk-width-small-1-6">
+                        <div>
+                            <img class="margin-small-left" src="images/5 8.png" width="250">
+                            <div class="team1 uk-text-uppercase uk-text-center">
+                                <div>hammad ahmed</div>
+                                <div style="color: #FEC200; line-height: 1em;">growth manager
+                                    founding member</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  id="member" class="uk-width-1-3 uk-width-small-1-6">
+                        <div>
+                            <img class="margin-small-left" src="images/3 8.png" width="250">
+                            <div class="team1 uk-text-uppercase uk-text-center">
+                                <div>zulqarnain</div>
+                                <div style="color: #FEC200; line-height: 1em;">creative designer
+                                    founding member</div>
+                            </div>
+                        </div>
+                    </div>  
+                                      
+                </div>
+            </div>
+        
+        </div>
+    </section>
+      
+    <section class="footer uk-background-secondary " id="footer">
+        <div class="uk-container">
+            <ul class="uk-grid uk-grid-small uk-margin-large-top uk-grid-width-1-3" data-uk-grid-margin>
+                 <li class="uk-width-1-6 uk-grid-width-medium-1-3 uk-grid-small-1-2">
+                    <div class="uk-panel uk-panel-box">
+                        <img src="images/Logo 1.png" alt="" width="100" height="100">
+                    </div>
+                 </li>
+                 <li class="uk-width-1-6 uk-grid-width-medium-1-3 uk-grid-small-1-2">
+                    <div class="uk-panel uk-panel-box">
+                        <ul class="uk-list">
+                            <li><a href="#">Our Porfolio</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">Home</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">About</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">Our Work</a></li>
+                        </ul>
+                    </div>
+                 </li>
+                 <li class="uk-width-1-6 uk-grid-width-medium-1-3 uk-grid-small-1-2">
+                    <div class="uk-panel uk-panel-box">
+                        
+                        <ul class="uk-list">
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">Marketing</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">Development</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">Branding</a></li>
+                        </ul>
+
+                    </div>
+                 </li>
+                 <li class="uk-width-1-6">
+                    <div class="uk-panel uk-panel-box">
+                        
+                        <ul class="uk-list">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">Email</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">LinkedIn</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">Instagram</a></li>
+                            <li><a href="#" class="uk-text-decoration-none">Twitter</a></li>
+                        </ul>
+
+                    </div>
+                 </li>
+
+                 <li class="uk-width-1-3">
+                    <div class="uk-panel uk-panel-box">
+                        <h4 style="color:white; margin-top:4px;">Let's make your business fly</h4>
+                        <form action="" width="100">
+                            <div class="uk-margin" uk-margin>
+
+                                <div uk-form-custom="target:true;">
+                                    <label for="">
+                                        <input class="uk-input" placeholder="Email Address..." type="text" name="" id="">
+                                        <button class="submit uk-button uk-button-default uk-background-secondary">Submit</button>
+                                    </label>
+                                </div>
+                                                                       
+                            </div>
+                        </form>
+                    </div>
+                 </li>
+                 
+               
+                
+            </ul>
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript">
+        var i = 0;
+        var text = [];
+        text = "award winning performace marketing agency generated over 20 million in revenue";
+    function typing(){
+        if(i<text.length){
+          document.getElementById("info").innerHTML += text.charAt(i);
+          document.getElementById("info2").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typing, 50);
+        } 
+    
+    }
+    typing();
+    const data = {
+        labels : ["", 2018, "", 2020, "", 2022, "", "", 2024, "", 2026],
+
+        datasets: [
+        {
+            label  : 'Chart',
+            data : [13.63, 20.21, 22.02, 24.57, 29.84, 36.41, 44.28, 51.01, 57.20, 63.97, 71.21],
+            backgroundColor : "#FDCF09",
+            borderColor : "#FDCF09",
+            borderWidth : 1,
+            borderRadius : 5
+        }
+        ]
+
+    };
+   
+    //config
+    const config = {
+        type : 'bar',
+        data,
+        options : {
+
+            scales : {
+               y: {
+                beginAtZero : true,
+                min:0,
+                max:75,
+                ticks : {
+                    stepSize : 25,
+                    maxTicksLimit : 5,  
+                    callback : ((context, index) => {
+                        return context;
+                    })
+                }
+               },
+
+
+
+            },
+            plugins: {
+                datalabels : {
+                    anchor: 'end',
+                    align: 'top',
+                    
+                }
+            }
+        },
+        plugins : [ChartDataLabels]
+
+    };
+
+    const myChart = new Chart (
+        document.getElementById('myChart'),
+        config
+    )
+   
+    </script>
+
+    
+   
+</body>
+</html>
